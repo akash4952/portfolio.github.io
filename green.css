@@ -1,0 +1,50 @@
+/*
+:root{
+
+    --mainColor:#7FFF00;
+	--secondaryColor:#7FFF05;
+
+	--borderColor:black;
+
+	--mainText:black;
+	--secondaryText:#4b5156;
+
+	--themeDotBorder:#24292e;
+
+	--previewBg:rgba(218, 105, 40, 0.8);
+	--previewShadow:#df966c;
+
+
+    --buttonColor:black;
+}*/
+:root{
+	--mainColor: #9EC9A8;
+	--mainShadow:    12px 12px 24px #99c3a3, 
+             -12px -12px 24px #a3cfad;
+    --mainRadius: 5px 5px 0 0;
+
+
+	--secondaryColor: #b7e6c2;
+	--secondaryShadow:  12px 12px 24px #b2dfbc, 
+             -12px -12px 24px #bcedc8;
+	--secondaryRadius: 5px;;
+
+	--borderColor: #86E6A1;
+
+	--mainText: beige;
+	--secondaryText: #4b5156;
+
+	--themeDotBorder: white;
+
+	--previewBg: rgb(251, 249, 243, 0.6);
+	--previewShadow: #72b68a;
+
+	/* --inputField:  inset 8px 8px 24px #b0ddba,  */
+            /* inset -8px -8px 24px #beefca; */
+            
+   --inputField: box-shadow: -8px 8px 12px 0 rgba(0, 0, 0, 0.3),
+    12px -12px 16px rgba(255, 255, 255, 0.25);
+
+	--buttonColor: #9EC9A8;
+
+} 
