@@ -36,3 +36,15 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+function myFunction(){
+	Swal.fire({
+		title: 'Hi, my name Akash Badola for further detail go and explore my portfolio',
+		imageWidth: 400,
+		imageHeight: 500,
+		
+	  })
+
+	  
+	 
+}
