@@ -27,6 +27,8 @@ html, body{
 
     margin: 0;
     padding:0;
+    /* max-width: 100%; */
+    /* overflow-x: hidden; */
 }
 body *{
 
@@ -184,7 +186,7 @@ h5 { font-size: 20px;}
     
 	 background-color: var(--secondaryColor); 
     border-bottom:1px solid var(--borderColor);
-    margin:0 0px
+    margin:0 0px;
 }
 
 
@@ -442,7 +444,19 @@ marquee{
  @media screen and (max-width:1200px){
 
     .main-container{
+        width:100%;
+        overflow-x: hidden;
+        
+    }
+    .about-me{
+        padding:2% 2%;
+    }
+    #preview{
         width:95%;
+    }
+    #preview-shadow{
+        width:85%;
+        margin-left:3% ;
     }
 }
 
@@ -461,8 +475,7 @@ marquee{
           padding-right: 20px;
 
     }
-    
-    
+
     }
    
 
