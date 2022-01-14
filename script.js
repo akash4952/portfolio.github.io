@@ -108,5 +108,5 @@ function myform(){
     btn.style.display="none"
 	icon1.style.display="none";
 	icon2.style.display="none";
-	document.getElementById("me").reset();
+	document.getElementById("contact-form").reset();
 }
