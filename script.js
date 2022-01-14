@@ -79,6 +79,7 @@ function myFunction(){
 }
 
 function myform(){
+	
 	Swal.fire(
 		'Thank you! for visiting my profile',
 		'Your Form have been submitted',

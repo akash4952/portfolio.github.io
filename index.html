@@ -236,7 +236,7 @@
         <div class="main-container">
             
             <h3 style="text-align: center;">Get in touch</h3>
-            <form id="contact-form" action="#" onsubmit="myform()">
+            <form id="contact-form" action="#" >
 
                 <label>Name</label>
                 <input class="input-field" type="text" name="name">
@@ -278,18 +278,52 @@
     </script>
         <script type="text/javascript">
             window.onload = function() {
+    
+	
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                     event.preventDefault();
+                    Swal.fire(
+		'Thank you! for visiting my profile',
+		'Your Form have been submitted',
+		'success'
+	  )
+	var duration = 15 * 1000;
+	var animationEnd = Date.now() + duration;
+	var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+	
+	function randomInRange(min, max) {
+	  return Math.random() * (max - min) + min;
+	}
+	
+	var interval = setInterval(function() {
+	  var timeLeft = animationEnd - Date.now();
+	
+	  if (timeLeft <= 0) {
+		return clearInterval(interval);
+	  }
+	
+	  var particleCount = 50 * (timeLeft / duration);
+	  // since particles fall down, start a bit higher than random
+	  confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+	  confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+	}, 250);
                     // generate a five digit number for the contact_number variable
                     // this.contact_number.value = Math.random() * 100000 | 0;
                     // these IDs from the previous steps
                     emailjs.sendForm('service_seputzr','template_kz52c1h', this)
                         .then(function() {
                             console.log('SUCCESS!');
+                                       
+	btn.style.display="none"
+    btn.style.display="none"
+	icon1.style.display="none";
+	icon2.style.display="none";
+                            document.getElementById("contact-form").reset();
                         }, function(error) {
                             console.log('FAILED...', error);
                         });
                 });
+
             }
         </script>
 
